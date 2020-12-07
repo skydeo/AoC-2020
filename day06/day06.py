@@ -60,7 +60,6 @@ print(f"Completed in {round(timeit.default_timer()-start_time, 4)} seconds.\n")
 def correctly_count_yeses(declarations):
     yeses = []
     for declaration in declarations:
-        print(declaration)
         chars = set(list("".join(declaration)))
         unanimous_yeses = sum(
             [
