@@ -49,7 +49,6 @@ print(f"Completed in {round(timeit.default_timer()-start_time, 4)} seconds.\n")
 
 
 def find_missing_seat(seat_ids):
-    seat_ids = sorted(seat_ids)
     for seat_id in seat_ids:
         if seat_id + 1 not in seat_ids:
             return seat_id + 1
