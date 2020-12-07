@@ -57,5 +57,5 @@ def find_missing_seat(seat_ids):
 
 
 start_time = timeit.default_timer()
-print(f"Part 1: {find_missing_seat(seat_ids)}")
+print(f"Part 2: {find_missing_seat(seat_ids)}")
 print(f"Completed in {round(timeit.default_timer()-start_time, 4)} seconds.\n")
