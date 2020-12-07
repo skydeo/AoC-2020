@@ -46,3 +46,16 @@ start_time = timeit.default_timer()
 seat_ids = [find_seat(p) for p in puzzle_input]
 print(f"Part 1: {max(seat_ids)}")
 print(f"Completed in {round(timeit.default_timer()-start_time, 4)} seconds.\n")
+
+
+def find_missing_seat(seat_ids):
+    seat_ids = sorted(seat_ids)
+    for seat_id in seat_ids:
+        if seat_id + 1 not in seat_ids:
+            return seat_id + 1
+    return 0
+
+
+start_time = timeit.default_timer()
+print(f"Part 1: {find_missing_seat(seat_ids)}")
+print(f"Completed in {round(timeit.default_timer()-start_time, 4)} seconds.\n")
